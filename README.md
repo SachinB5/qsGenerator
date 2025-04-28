@@ -1,0 +1,2 @@
+# qsGenerator
+angular
