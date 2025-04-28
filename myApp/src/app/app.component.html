@@ -4,7 +4,9 @@
   </header>
 
   <div>
-    <app-prompt-input />
-    <app-prompt-response />
+    <app-prompt-input (generate)="generatePrompt()" />
+    <div *ngIf="showResponse">
+      <app-prompt-response />
+    </div>
   </div>
 </div>

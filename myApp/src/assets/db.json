@@ -1,0 +1,54 @@
+{
+  "prompts": [
+    {
+      "id": 1,
+      "prompt": "What are Angular Lifecycle Hooks?",
+      "response": "Lifecycle hooks are special methods in Angular that are called during specific moments in a component or directive's life, such as when it is created, updated, or destroyed. They allow developers to control and react to these events."
+    },
+    {
+      "id": 2,
+      "prompt": "Why are lifecycle hooks important in Angular?",
+      "response": "Lifecycle hooks allow you to perform actions at key moments like initializing data, reacting to input changes, or cleaning up resources before a component is destroyed."
+    },
+    {
+      "id": 3,
+      "prompt": "List all the major Lifecycle Hooks in Angular.",
+      "response": "Major lifecycle hooks include ngOnChanges, ngOnInit, ngDoCheck, ngAfterContentInit, ngAfterContentChecked, ngAfterViewInit, ngAfterViewChecked, and ngOnDestroy."
+    },
+    {
+      "id": 4,
+      "prompt": "What is ngOnInit and when is it called?",
+      "response": "ngOnInit is called once after the first ngOnChanges. It is commonly used to initialize the component, such as fetching data or setting up values."
+    },
+    {
+      "id": 5,
+      "prompt": "What is the difference between ngOnChanges and ngOnInit?",
+      "response": "ngOnChanges is called whenever an @Input property changes and receives a SimpleChanges object, whereas ngOnInit is called only once after the component’s initial setup for general initialization."
+    },
+    {
+      "id": 6,
+      "prompt": "What is ngOnDestroy used for?",
+      "response": "ngOnDestroy is called right before Angular destroys the component. It is used to clean up resources like unsubscribing from observables, clearing timers, or removing event listeners to prevent memory leaks."
+    },
+    {
+      "id": 7,
+      "prompt": "Explain ngAfterViewInit with an example.",
+      "response": "ngAfterViewInit is triggered after Angular initializes the component's view and child views. It is typically used to access elements or child components via @ViewChild and manipulate them if needed."
+    },
+    {
+      "id": 8,
+      "prompt": "What is the use of ngDoCheck?",
+      "response": "ngDoCheck allows developers to implement custom change detection logic. It can be used to manually detect and react to changes that Angular’s default change detection might not catch."
+    },
+    {
+      "id": 9,
+      "prompt": "When do ngAfterContentInit and ngAfterContentChecked execute?",
+      "response": "ngAfterContentInit runs once after content (ng-content) is projected into a component. ngAfterContentChecked runs after every check of the projected content to detect changes."
+    },
+    {
+      "id": 10,
+      "prompt": "Can you override all lifecycle hooks in a single component?",
+      "response": "Yes, you can implement and override multiple lifecycle hooks in a single component. Angular automatically calls the appropriate methods at the right points in the component’s life."
+    }
+  ]
+}
